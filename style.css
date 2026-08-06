@@ -1048,6 +1048,7 @@ h2.section-title::after,
     }
     .contact-map-box {
         min-height: 300px;
+        width: 100%;
     }
     .doctors-flex {
         flex-direction: column; 
