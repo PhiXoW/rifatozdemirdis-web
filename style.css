@@ -1055,8 +1055,11 @@ h2.section-title::after,
         gap: 30px;              
     }
     .doctor-profile {
-        max-width: 100%; 
-        width: 100%;  
+        max-width: 350px; 
+        width: 90%;  
+    }
+    .doctor-profile img {
+        height: 340px; 
     }
     .mobile-call-btn {
         display: flex !important; 
