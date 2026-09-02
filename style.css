@@ -200,6 +200,18 @@ body {
     text-align: center;
 }
 
+/* 2. MOBİL İÇİN DİKEY FOTOĞRAF (Yeni ekleyeceğin kısım) */
+@media (max-width: 768px) {
+  .hero-section { 
+    /* Sadece arka plan görselini mobil versiyonla değiştiriyoruz */
+    background-image: url('hero-bg-mobil.jpeg'); 
+    
+    /* Eğer dikey fotoğrafta odak noktası tam ortada değilse (örneğin yüzler üstte kalıyorsa) 
+       center yerine top yazarak hizalamayı düzeltebilirsin: */
+    background-position: center; 
+  }
+}
+
 .hero-content {
     color: white;
     max-width: 800px;
