@@ -187,7 +187,8 @@ body {
 /* HERO (ANA SAYFA KARŞILAMA)                */
 /* ========================================= */
 .hero-section {
-    background-image: url('hero-bg.jpeg');
+    /* Yazıların daha rahat okunabilmesi için resmin üzerine hafif siyah karartma (gradient overlay) eklendi */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpeg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -1090,6 +1091,14 @@ h2.section-title::after,
         font-weight: 700;
         z-index: 9999;
         box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        /* Telefonda resmin odak noktasını ayarlamak için. 
+           Eğer resimdeki önemli detay soldaysa 25%, sağdaysa 75% yapabilirsiniz. */
+        background-position: 85% center;
     }
 }
 
