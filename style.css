@@ -1121,17 +1121,18 @@ h2.section-title::after,
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    @media (max-width: 768px) {
+    
+}
+@media (max-width: 768px) {
     .info-box ul li {
-        display: block; /* Mobilde flex özelliğini iptal eder, sığmayan metin doğal akışında alt satıra geçer */
+        display: block; 
     }
     
     .info-box ul li i {
-        float: left; /* İkonun başlığın hemen solunda hizalı kalmasını sağlar */
+        float: left; 
         margin-right: 12px;
         margin-top: 5px;
     }
-}
 }
 
 /* ========================================= */
