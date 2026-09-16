@@ -1123,15 +1123,27 @@ h2.section-title::after,
     }
     
 }
+/* Mobilde tedavi detay maddelerinin ferah tasarımı */
 @media (max-width: 768px) {
     .info-box ul li {
         display: block; 
+        position: relative;
+        padding-left: 25px; /* İkon için solda özel bir boşluk bırakıyoruz */
+        margin-bottom: 25px; /* Her bir madde arasına nefes aldıracak boşluk ekliyoruz */
     }
     
     .info-box ul li i {
-        float: left; 
-        margin-right: 12px;
-        margin-top: 5px;
+        position: absolute;
+        left: 0;
+        top: 5px; /* İkonu başlığın tam hizasına sabitliyoruz */
+    }
+
+    /* Başlık etiketini (strong veya b) blok elemanına çevirerek metnin aşağıya kaymasını sağlıyoruz */
+    .info-box ul li strong,
+    .info-box ul li b {
+        display: block;
+        margin-bottom: 6px; /* Başlık ile altındaki açıklama metni arasına boşluk */
+        color: var(--primary-color); /* Mobilde başlıkların mavi renkle daha vurgulu olmasını sağlar (isteğe bağlı) */
     }
 }
 
